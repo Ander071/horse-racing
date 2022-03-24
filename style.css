@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Special Elite', cursive;
+	background-image: url(images/desert-skies.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.game {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.container {
+	width: 1400px;
+	margin: auto;
+}
+
+.road {
+	width: 100%;
+	background-color: #C59A3D;
+	border: 10px solid black;
+	padding: 50px;
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.road img {
+	background-color: transparent;
+
+}
+
+.horse {
+	width: 150px;
+	height: 150px;
+	display: block;
+	/*background-color:red;*/
+	transform: translateX(0);
+	transition-property: transform;
+	transition-timing-function: linear;
+	user-select: none;
+}
+
+.finish {
+	width: 100px;
+	height: 100px;
+	display: block;
+}
+
+.controler {
+	display: flex;
+	justify-content: space-around;
+}
+
+.buttons {
+	width: 300px;
+	border: 0;
+	/*height: 80px;*/
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	visibility: hidden;
+}
+
+.buttons button {
+	/*box-sizing: border-box;*/
+	margin: 3px 0;
+	border: 0;
+	font-size: 15px;
+	background-color: #F0E68C;
+	padding: 9px;
+	/*font-weight: 700;*/
+	/*width: 200px;*/
+	text-align: center;
+}
+
+.buttons_visbility {
+	width: 300px;
+	/*height: 80px;*/
+	/*border: 0;*/
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	visibility: visibility;
+	/*margin: 5px;*/
+}
+
+.buttons_visbility button {
+	margin: 2.5px 0;
+	border: 0;
+	font-size: 15px;
+	background-color: #F0E68C;
+	padding: 9px;
+	font-weight: 700;
+	/*width: 100%;*/
+	text-align: center;
+	/*box-sizing: border-box;*/
+
+}
+
+.brown {
+	background-color: #C2BA71;
+}
+
+button {
+	font-family: 'Special Elite', cursive;
+}
+
+.valuta {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 25px;
+	align-items: center;
+}
+
+/*.dolar{
+	display: flex;
+	justify-content: flex-end;
+}*/
+.stavka input {
+	border: 0;
+	background-color: #A9A9A9;
+	color: black;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+}
+
+.brown_horse {
+	background-color: #8B4513;
+}
+
+.white_horse {
+	background-color: #FFF0F5;
+}
+
+.stavka {
+	display: flex;
+	flex-direction: column;
+}
+
+.stavka button {
+	border: 0;
+	padding: 10px;
+	background-color: #C0C0C0;
+	margin-top: 5px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.stavka input::placeholder {
+	color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.dolar_image {
+	height: 50px;
+
+}
+
+.modal {
+	position: absolute;
+	/*display: flex;*/
+	/*top: 45%;*/
+	/*left: 50%;*/
+	right: -200px;
+	bottom: 0;
+	/*margin: auto;*/
+	width: 200px;
+	transform: translateX(0px);
+	transition: transform 2s;
+}
+
+.pod_modal {
+	width: 250px;
+	position: absolute;
+	top: -150px;
+	left: -150px;
+	opacity: 0;
+
+}
+
+.pod_modal p {
+	position: absolute;
+	left: 0;
+	top: 35px;
+	right: 0;
+	margin: auto;
+	font-size: 20px;
+	width: 70%;
+	text-align: center;
+}
+
+.modal img {
+	width: 100%;
+}
+
+.modalTransform {
+	transform: translateX(-200px);
+	/*transition: transform 2s;*/
+}
+
+.pod_modalTransform {
+	opacity: 1;
+}
+
+.horse_modal {
+	position: absolute;
+	width: 100px;
+	bottom: 100%;
+
+
+}
+
+.horse_transform_part_01 {
+	transform: translateX(350px);
+}
+
+.horse_transform_part_02 {
+	transform: translateX(700px);
+}
+
+.horse_transform_part_03 {
+	transform: translateX(1100px);
+}
+
+.horse_transform_back_01 {
+
+	transform: translateX(1100px) rotateY(180deg);
+
+}
+
+.horse_transform_back_02 {
+
+	transform: rotateY(180deg) translateX(0);
+
+}
